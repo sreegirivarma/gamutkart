@@ -1,41 +1,22 @@
 version: 0.2
-
 phases:
-
   install:
-    commands:
-      - apt-get install -y maven
     runtime-versions:
-
-
-      java: corretto8
-
+       java: corretto11
     commands:
-
-      - echo "Nothing to do in the install phase..."
-
+        - apt-get update -y
+        - apt-get install -y maven
   pre_build:
-
     commands:
-
-      - echo "Nothing to do in the pre-build phase..."
-
+      - echo Nothing to do in the pre_build phase...
   build:
-
     commands:
-
       - echo Build started on `date`
-
-      - mvnn --version
-
+      - mvn install
   post_build:
-
     commands:
-
       - echo Build completed on `date`
-
 artifacts:
-
   files:
+    - target/gamutkart.jar
 
-    - 'target/ccdemo.war'
