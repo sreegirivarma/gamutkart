@@ -18,5 +18,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/gamutkart.jar
+    - target/ccdemo.jar
 
