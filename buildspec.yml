@@ -8,9 +8,8 @@ phases:
 
     runtime-versions:
 
-      #java: openjdk8 #not working
 
-      java: corretto8 ----> *** NOTE HERE***
+      java: corretto8
 
     commands:
 
@@ -41,5 +40,3 @@ artifacts:
   files:
 
     - 'target/ccdemo.war'
-
-
