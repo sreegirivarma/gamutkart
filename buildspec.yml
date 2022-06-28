@@ -1,11 +1,11 @@
 version: 0.2
+
 phases:
   install:
     #runtime-versions:
-       #java: corretto11
+    #  java: openjdk8    
     commands:
-        - apt-get update -y
-        - apt-get install -y maven
+      - echo Nothing to do in the install phase...
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
@@ -18,5 +18,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/ccdemo.jar
+    - 'target/ccdemo.war'
 
